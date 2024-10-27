@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #222;
+    text-align: left;
+}
+
+.intro {
+    text-align: center;
+    max-width: 400px;
+}
+
+.intro h1, .intro h2, .intro h3 {
+    margin: 0;
+}
+
+.intro h3 span {
+    color: #e07;
+}
+
+.btn {
+    background-color: #e07;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image {
+    max-width: 300px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Services Section */
+#services {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    min-width: 200px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart {
+    text-align: center;
+}
+
+.pie-chart {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#e07 calc(var(--percentage) * 1%), #111 0);
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, textarea {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust navbar */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Adjust hero section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 200px;
+    }
+
+    /* Adjust service cards layout */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Adjust skills charts layout */
+    .skills-charts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust form layout for small screens */
+    .form-group {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        max-width: 100%;
+    }
+}
